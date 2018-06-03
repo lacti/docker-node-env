@@ -12,9 +12,9 @@ RUN apk -v --update add \
     apk -v --purge del py-pip && \
     rm /var/cache/apk/*
 
-RUN apk -v --update add bash
+RUN apk -v --update add bash make
 
 VOLUME /project
 WORKDIR /project
-ENTRYPOINT ["aws"]
+CMD ["aws"]
 
