@@ -1,0 +1,7 @@
+version: "3.5"
+services:
+  node-awscli:
+    image: lacti/node-awscli
+    build:
+      context: .
+
