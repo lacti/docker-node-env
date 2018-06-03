@@ -1,7 +1,10 @@
 version: "3.5"
 services:
-  node-awscli:
-    image: lacti/node-awscli
+  awscli:
+    image: lacti/docker-node-env:awscli
     build:
-      context: .
-
+      context: awscli
+  wine-awscli:
+    image: lacti/docker-node-env:wine-awscli
+    build:
+      context: wine-awscli
