@@ -15,6 +15,7 @@ RUN apk -v --update add \
 RUN apk -v --update add bash make
 
 VOLUME /root/.electron
+VOLUME /root/.cache
 VOLUME /project
 WORKDIR /project
 CMD ["aws"]
